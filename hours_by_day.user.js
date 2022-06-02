@@ -5,6 +5,7 @@
 // @description  Roll up hours
 // @author       Someguy at Mugo
 // @match        https://tasktracker.mugo.ca/*
+// @updateURL    https://github.com/mugoweb/userscripts/edit/main/hours_by_day.user.js
 // @grant        none
 // ==/UserScript==
 
