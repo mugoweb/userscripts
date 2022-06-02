@@ -1,4 +1,4 @@
-
+//==UserScript== 
 $('.active-day').each(function(index, day){
 
     let dayName = ($(day).find('.date-link').text());
