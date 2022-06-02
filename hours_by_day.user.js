@@ -1,5 +1,17 @@
-//==UserScript== 
-$('.active-day').each(function(index, day){
+// ==UserScript==
+// @name         Roll up hours
+// @namespace    https://tasktracker.mugo.ca/
+// @version      0.1
+// @description  Roll up hours
+// @author       Someguy at Mugo
+// @match        https://tasktracker.mugo.ca/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    $('.active-day').each(function(index, day){
 
     let dayName = ($(day).find('.date-link').text());
     let totalHours = 0.0;
@@ -21,4 +33,5 @@ $('.active-day').each(function(index, day){
 
     console.log(dayName + " total hours: ", totalHours);
     $(day).find('.date-link').append("<span style='text-align:right; color:red; float:right' class='total-hours'>" + totalHours + "</span>");
-})
+  })
+})();
